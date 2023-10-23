@@ -18,5 +18,10 @@ jobs:
       with:
         java-version: 11
 
-    - name: Build project with Maven
-      run: mvn build --file pom.xml
+    - name: clean project with Maven
+      run: mvn clean --file pom.xml
+    - name: compile  project with Maven
+      run: mvn compile --file pom.xml
+    - name: deploy  project with Maven
+      run: mvn install --file pom.xml
+      
