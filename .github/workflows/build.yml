@@ -23,5 +23,5 @@ jobs:
     - name: compile  project with Maven
       run: mvn compile --file pom.xml
     - name: deploy  project with Maven
-      run: mvn install --file pom.xml
+      run: mvn clean install spring-boot:repackage --file pom.xml
       
